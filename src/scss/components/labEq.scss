@@ -1,0 +1,111 @@
+.labEq {
+  &__inner {
+    padding-top: 299px;
+  }
+
+  &__subtitle {
+    margin-bottom: 82px;
+  }
+
+  &__tab {
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 42px;
+      padding: 0;
+      background: transparent;
+      border: unset;
+      color: #585858;
+      transition: .3s linear;
+
+      &:hover {
+        color: #06E0A1;
+      }
+
+      &.active {
+        pointer-events: none;
+        color: #06E0A1;
+      }
+
+      &-outer {
+        display: flex;
+        justify-content: space-between;
+        padding: 63px 130px 63px 0;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          z-index: -1;
+          right: 0;
+          width: 3000px;
+          height: 100%;
+          top: 0;
+          content: '';
+          position: absolute;
+          border: 3px solid #00C58A;
+          box-sizing: border-box;
+          border-radius: 0px 50px 0px 0px;
+        }
+      }
+    }
+
+    &-content {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 114px;
+      padding-top: 53px;
+      padding-bottom: 53px;
+
+      &.active {
+        display: flex;
+        animation: show .7s;
+      }
+
+      &-outer {
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          z-index: -1;
+          right: 0;
+          width: 3000px;
+          height: 100%;
+          top: 0;
+          content: '';
+          position: absolute;
+          background: #EFEEEE;
+          border-radius: 0px 0px 50px 0px;
+        }
+      }
+
+      &-text {
+        font-size: 24px;
+        line-height: 28px;
+        max-width: 675px;
+        
+        color: #000000;
+      }
+
+      &-img-outer {
+        width: 444px;
+        height: 444px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      &-play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+
+}

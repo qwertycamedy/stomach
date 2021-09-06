@@ -1,0 +1,80 @@
+// @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
+
+@import "./components/header";
+
+
+@import "./components/banner";
+@import "./components/calc";
+@import "./components/trust";
+@import "./components/blockquote-slider";
+@import "./components/services";
+@import "./components/cons";
+@import "./components/specialists";
+@import "./components/gallery";
+@import "./components/reviews";
+@import "./components/map";
+@import "./components/cons-supfooter";
+
+
+
+
+@import "./components/our-specialists";
+
+
+@import "./components/our-contacts";
+@import "./components/clinic-contacts";
+@import "./components/guest";
+
+
+
+@import "./components/not-found";
+
+
+@import "./components/requisites";
+@import "./components/contorg";
+@import "./components/evidence";
+@import "./components/license";
+
+
+@import "./components/no-vacancy";
+@import "./components/vacancy";
+
+
+@import "./components/betcond";
+@import "./components/vacancy-form";
+
+
+@import "./components/labaratory";
+@import "./components/advlab";
+@import "./components/denEq";
+@import "./components/labEq";
+
+
+@import "./components/actual";
+@import "./components/feed";
+
+
+@import "./components/reaprice";
+@import "./components/price-tab";
+
+
+@import "./components/tile";
+
+
+@import "./components/about-tab";
+@import "./components/blockquote-spec";
+@import "./components/main-adv";
+
+
+@import "./components/our-works";
+
+
+
+@import "./components/spec";
+
+
+@import "./components/footer";
+
+
+
+@import "./components/media";

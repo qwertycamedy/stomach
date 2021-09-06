@@ -1,0 +1,80 @@
+.advlab {
+
+  &__inner {
+    padding-top: 200px;
+  }
+
+  &__subtitle {
+    margin-bottom: 82px;
+  }
+
+  &__card {
+    &-outer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 232px;
+
+
+
+    &:before {
+      content: '';
+      right: 0;
+      top: 0;
+      height: 197px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &:nth-child(1) {
+      &:before {
+        width: 3000px;
+        background: #00DEA2;
+        border-radius: 0px 50px 0px 0px;
+      }
+    }
+    &:nth-child(2) {
+      &:before {
+        width: 100%;
+        background: #EFEEEE;
+        border-radius: 0px 50px 0px 0px;
+      }
+    }
+    &:nth-child(3) {
+      &:before {
+        width: 100%;
+        background: #EFEEEE;
+        border-radius: 50px 0px  0px 0px;
+      }
+    }
+    &:nth-child(4) {
+      &:before {
+        width: 3000px;
+        left: 0;
+        right: unset;
+        background: #00DEA2;
+        border-radius: 50px 0px 0px 0px;
+      }
+    }
+
+
+    
+    &-img-outer {
+      width: 232px;
+      height: 197px;
+      padding: 44px 60px;
+      margin-bottom: 33px;
+    }
+
+    &-text {
+      font-size: 24px;
+      line-height: 28px;
+      color: #585858;
+    }
+  }
+
+}

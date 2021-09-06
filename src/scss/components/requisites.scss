@@ -1,0 +1,20 @@
+.requisites {
+  &__inner {
+    padding-top: 120px;
+  }
+
+  &__subtitle {
+    margin-bottom: 82px;
+  }
+
+  &__text {
+    &-span {
+      font-weight: 400;
+    }
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #585858;
+    }
+}

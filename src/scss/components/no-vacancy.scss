@@ -1,0 +1,22 @@
+.vacancy {
+  &__no {
+    &-outer {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    &-img {
+      max-width: unset;
+      width: 100%;
+      &-outer {
+        width: 96px;
+      }
+    }
+    &-text {
+      font-size: 36px;
+      line-height: 42px;
+      max-width: 1024px;
+      color: #007755;
+    }
+  }
+}

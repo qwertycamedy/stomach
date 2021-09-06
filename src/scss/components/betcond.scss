@@ -1,0 +1,56 @@
+.betcond {
+  &__inner {
+    padding-top: 200px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #00C58A;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -64px;
+      top: -137px;
+      width: 299px;
+      height: 299px;
+      background: #EFEEEE;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;    
+    position: relative;
+    z-index: 1;
+    color: var(--text-green);
+    margin-bottom: 120px;
+  }
+
+  &__text {
+    font-size: 30px;
+    line-height: 35px;
+    max-width: 696px;
+    color: #585858;
+  }
+
+  &__img {
+    &-outer {
+      z-index: -1;
+      position: absolute;
+      right: 0;
+      bottom: -60px;
+      width: 612px;
+      height: 918px;
+    }
+  }
+}

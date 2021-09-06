@@ -1,0 +1,122 @@
+.vacancy-form {
+  overflow: hidden;
+  &__inner {
+    padding-top: 200px;
+  }
+
+  &__subtitle {
+    margin-bottom: 80px;
+  }
+
+  &__form-title {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    padding: 55px 80px 55px 0;
+    display: inline-flex;
+    margin-bottom: 80px;
+
+    &:before {
+      z-index: -1;
+      background: #00DEA2;
+      border-radius: 0px 0px 70px 0px;
+      width: 2000px;
+      height: 100%;
+      right: 0;
+      content: '';
+      top: 0;
+      position: absolute;
+    }
+  }
+
+  &__form {
+    &-outer {
+      position: relative;
+      padding: 61px 0 171px 96px;
+      &:before {
+        z-index: -1;
+        background: #EBEBEB;
+        border-radius: 0px 0px 0px 80px;
+        width: 2500px;
+        height: 100%;
+        left: 0;
+        content: '';
+        top: 0;
+        position: absolute;
+      }
+    }
+
+    max-width: 1064px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 53px 96px;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 484px;
+    height: 85px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #585858;
+    outline: none;
+    border: unset;
+    &::placeholder {
+      color: #B6B4B4;
+    }
+    
+  }
+
+  &__textarea {
+    width: 1064px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    height: 417px;
+    resize: none;
+    padding: 51px 41px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #585858;
+    outline: none;
+    border: unset;
+    &::placeholder {
+      color: #B6B4B4;
+    }
+  }
+
+  &__input-button {
+    gap: 66px 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    background: #FFBA40;
+    border-radius: 56px;
+    width: 484px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    border: unset;
+    transition: .1s linear;
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+}

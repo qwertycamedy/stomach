@@ -1,0 +1,62 @@
+.reaprice {
+
+  &__inner {
+    padding-top: 180px;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #00C58A;
+    margin-left: 62px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -64px;
+      top: -160px;
+      width: 299px;
+      height: 299px;
+      background: #EFEEEE;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    margin-left: 62px;
+    font-size: 40px;
+    line-height: 47px;
+    position: relative;
+    z-index: 1;
+    color: var(--text-green);
+    margin-bottom: 55px;
+  }
+
+
+
+  &__text {
+    &-outer {
+      display: flex;
+      justify-content: center;
+      gap: 127px;
+    }
+
+    max-width: 515px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #585858;
+
+    &-span {
+      font-weight: 500;
+      color: #00C58A;
+    }
+  }
+
+}

@@ -1,0 +1,67 @@
+.labaratory {
+
+  &__inner {
+    padding-top: 200px;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #00C58A;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -64px;
+      top: -137px;
+      width: 299px;
+      height: 299px;
+      background: #EFEEEE;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;    
+    position: relative;
+    z-index: 1;
+    color: var(--text-green);
+    margin-bottom: 110px;
+  }
+
+  &__text-img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__text {
+    max-width: 696px;
+    
+    font-size: 30px;
+    line-height: 35px;
+    
+    color: #585858;
+    
+  }
+
+}
+
+.labinfo .labaratory {
+  &__text-img {
+    position: relative;
+    z-index: 0;
+  }
+  &__img-outer {
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+    z-index: -1;
+  }
+}

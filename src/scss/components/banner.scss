@@ -1,0 +1,51 @@
+.banner {
+  background-image: url(../img/banner_bg.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  &__inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+  }
+
+  &__title {
+    font-weight: 500; 
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 40px;
+    &-span {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    max-width: 927px;
+    margin-bottom: 77px;
+    font-size: 31px;
+    line-height: 36px;
+  }
+
+  &__link {
+    width: 444px;
+    height: 67px;
+    background: #00C58A;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .1s linear;
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+}

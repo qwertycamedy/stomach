@@ -1,0 +1,129 @@
+.price {
+
+  &__inner {
+    padding-top: 100px;
+  }
+
+  &__tab {
+    &-btn {
+      border: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: unset;
+      position: relative;
+      color: #007755;
+      z-index: 1;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #00C58A;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        transition: .3s linear;
+      }
+
+      &:hover {
+        &:before {
+          width: 53px;
+          height: 53px;
+        }
+      }
+
+      &.active {
+        &:before {
+          width: 53px;
+          height: 53px;
+        }
+      }
+
+      &-outer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+    }
+
+    &-content {
+      display: none;
+      position: relative;
+
+      &.active {
+        animation: show .7s;
+        display: block;
+      }
+
+      &-top {
+        display: flex;
+        justify-content: space-between;
+
+        &-info {
+          margin-top: 100px;
+          min-width: 350px;
+        }
+
+        &-img {
+          &-outer {
+            transform: translateY(5px);
+            max-width: 656px;
+            max-height: 437px;
+          }
+        }
+      }
+
+    }
+  }
+
+  &__card-outer {
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__card {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 3px solid #EBEBEB;
+    border-radius: 25px;
+    padding-left: 96px;
+    padding-right: 170px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    gap: 15px;
+
+    &-title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+
+      color: #00C58A;
+    }
+
+    &-num {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #585858;
+      white-space: nowrap;
+    }
+  }
+
+
+}

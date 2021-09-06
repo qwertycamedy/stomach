@@ -1,0 +1,150 @@
+.trust {
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    padding-top: 299px;
+  }
+
+  &__subtitle {
+    margin-bottom: 82px;
+  }
+
+  &__card {
+    &-outer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+      padding-bottom: 117px;
+
+      &:before {
+        height: 100%;
+        width: 3000px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        position: absolute;
+        top: 0;
+        background: #F6F6F6;
+        z-index: -1;
+      }
+    }
+
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      color: #FFFFFF;
+
+      &:before {
+        background: #00DEA2;
+      }
+    }
+
+    &:nth-child(1) {
+      padding-right: 184px;
+      margin-top: 98px;
+      &:before {
+        border-radius: 0px 0px 70px 0px;
+        width: 2000px;
+        height: 404px;
+        right: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      padding-right: 150px;
+      &:before {
+        width: 560px;
+        border-radius: 70px 0px 0px 0px;
+        height: 838px;
+        right: 0;
+        top: -98px;
+      }
+
+      & .trust__card-num {
+        text-align: right;
+      }
+
+      & .trust__card-title {
+        margin-bottom: 43px;
+        text-align: right;
+        max-width: 364px;
+      }
+
+      & .trust__card-text {
+        max-width: 364px;
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      color: #7DE9EB;
+
+      &:before {
+        background: #fff;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: 208px;
+      max-width: 505px;
+      text-align: right;
+      padding-right: 55px;
+      &:before {
+        right: 0;
+        top: -63px;
+        width: 779px;
+        height: 535px;
+        border-radius: 0px 90px 0px 0px;
+      }
+
+      & .trust__card-title {
+        margin-bottom: 43px;
+      }
+    }
+    
+    &:nth-child(4) {
+      margin-top: 208px;
+      max-width: 505px;
+      text-align: right;
+      padding-right: 55px;
+      &:before {
+        left: -100px;
+        top: -33px;
+        width: 2000px;
+        height: 404px;
+        border-radius: 70px 0px 0px 0px;
+      }
+    }
+
+    &-num {
+      font-weight: 700;
+      font-size: 144px;
+      line-height: 169px;
+    }
+
+    &-title {
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: 700;
+    }
+
+    &-text {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: right;
+    }
+  }
+}

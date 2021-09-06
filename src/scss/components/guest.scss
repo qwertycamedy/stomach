@@ -1,0 +1,148 @@
+.guest {
+
+  &__inner {
+    padding-top: 300px;
+  }
+
+  &__tab {
+    &-btn {
+      &-outer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 90px;
+        margin-bottom: 28px;
+      }
+
+      width: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 12px;
+      background: unset;
+      border: unset;
+      position: relative;
+      color: #585858;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 35px;
+      transition: .3s linear;
+
+      &:before {
+        width: 0;
+        height: 5px;
+        background: #00C58A;
+        border-radius: 5px;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        transition: .3s linear;
+      }
+
+      &.active {
+        pointer-events: none;
+        color: #00C58A;
+
+        &:before {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        color: #00C58A;
+
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+
+    &-content {
+      position: relative;
+      display: none;
+
+      &.active {
+        display: block;
+        animation: show .7s;
+      }
+
+      &-addres {
+        &-outer {
+          position: absolute;
+          top: 35px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          display: flex;
+          align-items: center;
+          gap: 116px;
+          z-index: 2;
+        }
+
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        border: unset;
+        width: 232px;
+        height: 34px;
+        background: #fff;
+        color: #00C58A;
+        transition: .3s linear;
+
+        &:hover {
+          background: #00C58A;
+          color: #FFFFFF;
+        }
+
+        &.active {
+          pointer-events: none;
+          background: #00C58A;
+          color: #FFFFFF;
+        }
+      }
+
+      &-video {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url(../img/play.svg);
+          background-size: cover;
+          width: 215px;
+          height: 215px;
+          transition: .3s linear;
+        }
+
+        &:hover {
+          &:before {
+            opacity: .5;
+          }
+        }
+
+        &-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+
+.gtc-inner-1,
+.gtc-inner-2 {
+  display: none;
+  &.active {
+    display: flex;
+    animation: show .7s;
+  }
+}

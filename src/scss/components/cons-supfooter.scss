@@ -1,0 +1,13 @@
+.cons-supfooter .cons {
+  &__inner {
+    padding-top: 250px;
+    padding-bottom: 5px;
+  }
+  &__form {
+    &-outer {
+      &:before {
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}

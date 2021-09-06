@@ -1,0 +1,146 @@
+.clinic-contacts {
+  &__inner {
+    padding-top: 299px;
+  }
+
+  &__subtitle {
+    margin-bottom: 80px;
+  }
+
+  &__card {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    &-outer {
+      display: flex;
+      gap: 20px;
+
+      &:nth-child(1) {
+        .clinic-contacts__card {
+          &:nth-child(2) {
+            width: 100%;
+            max-width: 792px;
+
+            &:before {
+              left: 0;
+              background-image: url(../img/clinic-contact-1.jpg);
+              width: 1066px;
+              background-size: cover;
+              background-position: right;
+            }
+          }
+
+          &:nth-child(1) {
+            width: 560px;
+            padding-top: 56px;
+            padding-right: 40px;
+
+            &:before {
+              width: 3000px;
+              background: #EBEBEB;
+              right: 0;
+              top: 0;
+              z-index: -1;
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .clinic-contacts__card {
+          &:nth-child(1) {
+            width: 100%;
+            max-width: 792px;
+
+            &:before {
+              right: 0;
+              background-image: url(../img/clinic-contact-2.jpg);
+              width: 1066px;
+              background-size: cover;
+              background-position: left;
+            }
+          }
+
+          &:nth-child(2) {
+            width: 560px;
+            padding-top: 56px;
+            padding-left: 40px;
+            text-align: right;
+
+            &:before {
+              width: 3000px;
+              background: #EBEBEB;
+              left: 0;
+              top: 0;
+              z-index: -1;
+            }
+
+            & .clinic-contacts__card-contact-outer {
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+
+    position: relative;
+    z-index: 1;
+    height: 360px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+    }
+
+
+    &-title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+
+      color: #00DEA2;
+      margin-bottom: 9px;
+    }
+
+    &-subtitle {
+      font-size: 24px;
+      line-height: 28px;
+      color: #585858;
+      margin-bottom: 55px;
+    }
+
+    &-contact {
+      &-outer {
+        width: max-content;
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-name {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #007755;
+      }
+
+      &-link {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: right;
+        font-weight: 400;
+        color: #585858;
+
+      }
+    }
+  }
+}

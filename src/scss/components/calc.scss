@@ -1,0 +1,209 @@
+.calc {
+  &__inner {
+    padding-top: 100px;
+  }
+
+  &__subtitle {
+    margin-bottom: 82px;
+  }
+
+  &__client-symptom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__client,
+  &__symptom {
+    &-title {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      color: #007755;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__client {
+    &-tab {
+      &-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-btn {
+        &-outer {
+          display: flex;
+          align-items: center;
+          gap: 60px;
+          margin-bottom: 70px;
+        }
+
+        color: rgba(#585858, .5);
+        padding: 11px 19px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        border-radius: 7px;
+        border: unset;
+        transition: .3s linear;
+
+        &:hover,
+        &.active {
+          background: #00C58A;
+          color: #fff;
+        }
+      }
+
+      &-content {
+        position: relative;
+        display: none;
+        &.active {
+          display: block;
+          animation: show .7s;
+        }
+      }
+    }
+  }
+
+  &__symptom {
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &-outer {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 792px;
+        padding-left: 32px;
+        padding-bottom: 44px;
+        padding-right: 0;
+        padding-top: 11px;
+        &:before {
+          z-index: -1;
+          background: #EBEBEB;
+          border-bottom-left-radius: 50px;
+          width: 3000px;
+          height: 100%;
+          left: 0;
+          top: 0;
+          content: '';
+          position: absolute;
+        }
+      }
+    }
+
+    &-clean {
+      width: max-content; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-bottom: 6px;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: rgba(#666666,.5);
+      border: unset;
+      background: unset;
+      padding: 0;
+      transition: .3s linear;
+      text-decoration: underline transparent;
+      &:hover {
+        text-decoration: underline rgba(#666666,.5);
+      }
+    }
+    &-label {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      color: #585858;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-left: 60px;
+      cursor: pointer;
+    }
+
+    &-checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      &-span {
+        margin-left: -60px;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border: 2px solid #00DEA2;
+        border-radius: 50%;
+        background: transparent;
+        transition: .3s linear;
+      }
+
+      &:checked + .calc__symptom-checkbox-span {
+        background: #00dea2;
+        pointer-events: none;
+      }
+    }
+  }
+
+
+
+  &__price-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+
+    &-title {
+      color: #007755;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-span {
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+
+    &-num {
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 75px;
+      color: #00DEA2;
+    }
+  }
+
+  &__details {
+    margin-right: 150px;
+    width: 444px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00C58A;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    font-family: var(--ffos);
+    color: #fff;
+    border: unset;
+    transition: .1s linear;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+}

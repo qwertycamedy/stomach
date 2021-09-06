@@ -1,0 +1,48 @@
+.gallery {
+  &__inner {
+    padding-top: 250px;
+  }
+
+  &__subtitle {
+    margin-bottom: 82px;
+  }
+
+  &__img {
+    &-body {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 84px;
+
+      width: 1900px;
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #007755;
+    width: max-content;
+    transition: .2s linear;
+    &-img {
+      transition: .2s linear;
+    }
+    &:hover {
+      letter-spacing: 2px;
+      .specialists__link-img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
