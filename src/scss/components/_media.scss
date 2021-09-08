@@ -133,8 +133,17 @@
   .our-specialists {
     & .specialists {
       &__card-outer {
-        gap: 80px;
-        justify-content: center;
+        display: none;
+      }
+
+      &__slider {
+        &-two,
+        &-three,
+        &-four,
+        &-five,
+        &-six {
+          display: block;
+        }
       }
     }
   }
@@ -598,6 +607,7 @@
       }
     }
   }
+
   .cons-supfooter .cons {
     &__info-form {
       margin-bottom: 150px;
@@ -645,7 +655,6 @@
       &__block-title {
         font-size: 30px;
         line-height: 34px;
-        text-align: center;
       }
     }
   }
@@ -837,9 +846,11 @@
       margin: 0 auto;
       position: relative;
     }
+
     &__infoOne {
       margin-bottom: 615px;
     }
+
     &__slider {
       &-outer {
         position: absolute;
@@ -847,6 +858,7 @@
         top: 300px;
       }
     }
+
     & .swiper-pagination-bullet {
       width: 50px;
       height: 50px;
@@ -863,48 +875,59 @@
       align-items: center;
       gap: 50px;
     }
+
     &__info {
       max-width: 780px;
     }
   }
+
   .spec-edu {
     &__card {
       &-outer {
         flex-direction: column;
       }
+
       &.circle:nth-child(1) {
         order: 0;
       }
+
       &.rect:nth-child(2) {
         order: 2;
         transform: translateY(0);
         margin-left: auto;
+
         .spec-edu__card-date {
-          transform: translate(170px,0);
+          transform: translate(170px, 0);
           margin-bottom: 60px;
         }
       }
+
       &.rect:nth-child(3) {
         order: 1;
       }
+
       &.circle:nth-child(4) {
         order: 3;
         margin-left: auto;
       }
     }
   }
+
   .spec-cert {
     &__slider {
       &-inner {
         flex-direction: column;
       }
+
       &-navigation {
         margin: 30px 30px 0 auto;
       }
     }
+
     &__info {
       margin-bottom: 30px;
     }
+
     &__img {
       &-outer {
         margin-left: auto;
@@ -912,9 +935,11 @@
       }
     }
   }
+
   .spec-rev {
     &__slider {
       height: 480px;
+
       &-outer {
         width: 740px;
       }
@@ -1732,8 +1757,8 @@
 
     &:before {
       background-size: cover;
-      width: 60px;
-      height: 60px;
+      width: 130px;
+      height: 130px;
     }
 
     &__title {
@@ -2085,6 +2110,7 @@
         width: auto;
         height: auto;
         max-width: 400px;
+
         &:before {
           height: 90%;
           width: 100%;
@@ -2092,15 +2118,18 @@
         }
       }
     }
+
     &__info {
       max-width: 400px;
     }
+
     &__title {
       font-size: 22px;
       line-height: 26px;
       max-width: 170px;
       margin-left: auto;
     }
+
     &__subtitle {
       font-size: 16px;
       line-height: 22px;
@@ -2108,6 +2137,7 @@
       max-width: 170px;
       margin-left: auto;
     }
+
     &__exp {
       font-size: 18px;
       line-height: 22px;
@@ -2115,41 +2145,50 @@
       margin-bottom: 50px;
       border-radius: 10px;
     }
+
     &__grade {
       top: 0;
     }
+
     &__quote {
       font-size: 14px;
       line-height: 16px;
       margin-bottom: 30px;
+
       &:before {
         width: 17px;
         height: 16px;
         top: -35px;
       }
     }
+
     &__text {
       font-size: 15px;
       line-height: 17px;
     }
   }
+
   .spec-edu {
     &__card {
       &-outer {
         gap: 40px;
       }
+
       &-date {
         font-size: 30px;
         line-height: 34px;
         margin-bottom: 15px;
       }
+
       &-text {
         font-size: 18px;
         line-height: 22px;
       }
+
       &.circle:nth-child(1) {
         & .spec-edu__card-date {
           margin-bottom: 40px;
+
           &:before {
             width: 70px;
             height: 70px;
@@ -2157,14 +2196,17 @@
             top: -20px;
           }
         }
+
         & .spec-edu__card-text {
           transform: unset;
         }
       }
+
       &.circle:nth-child(4) {
         & .spec-edu__card-date {
           margin-right: 15px;
           margin-bottom: 40px;
+
           &:before {
             width: 70px;
             height: 70px;
@@ -2172,12 +2214,15 @@
             top: -20px;
           }
         }
+
         & .spec-edu__card-text {
           transform: unset;
           margin-right: 30px;
         }
       }
+
       &.rect {
+
         &:nth-child(2),
         &:nth-child(3) {
           & .spec-edu__card-date {
@@ -2189,28 +2234,34 @@
       }
     }
   }
+
   .spec-cert {
     &__info {
       padding: 20px 15px 20px 0;
+
       &:before {
         border-bottom-right-radius: 30px;
       }
+
       &-title {
         font-size: 26px;
-        line-height: 30px;  
+        line-height: 30px;
         max-width: 300px;
         margin-bottom: 20px;
       }
+
       &-text {
         font-size: 16px;
         line-height: 20px;
       }
     }
   }
+
   .spec-rev {
     & .container {
       padding: 0 5px;
     }
+
     &__slider {
       &-outer {
         width: 420px;
@@ -2223,6 +2274,7 @@
         height: 30px;
       }
     }
+
     &__img-outer {
       padding: 10px;
       border-radius: 19px;
@@ -2236,7 +2288,8 @@
     margin-top: 100px;
 
     &__img-outer {
-      display: none;
+      width: 582px;
+      left: -397px;
     }
 
     & .container {
@@ -2261,6 +2314,8 @@
     &__text {
       font-size: 16px;
       line-height: 20px;
+      max-width: 180px;
+      margin-left: auto;
     }
 
     &__link {
@@ -2368,29 +2423,27 @@
       margin-bottom: 40px;
     }
 
-    &__info-img {
-      display: unset;
-      align-items: unset;
-    }
 
 
     &__text {
       font-size: 16px;
       line-height: 18px;
-      max-width: 600px;
-      margin-bottom: 50px;
+      max-width: 250px;
+      margin-bottom: 80px;
     }
 
-    &__img {
+    &__img{
       &-outer {
-        display: none;
+        width: 170px;
+        right: -50px;
+        top: -100px;
       }
     }
 
     &__adv {
       &-outer {
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 427px;
         justify-content: space-between;
         width: auto;
       }
@@ -2521,6 +2574,7 @@
       }
     }
   }
+
   .our-works {
     &__slider {
       &-outer {
@@ -2531,44 +2585,54 @@
         top: 180px;
       }
     }
+
     & .swiper-pagination-bullet {
       width: 30px;
       height: 30px;
     }
+
     &__info {
       width: 100%;
+
       &One {
         max-width: 300px;
         margin: 0 auto 400px;
+
         &-title {
           font-size: 22px;
           line-height: 26px;
           margin-bottom: 15px;
         }
+
         &-subtitle {
           font-size: 16px;
           line-height: 20px;
           max-width: 270px;
         }
       }
+
       &Two {
         &:before {
           border-top-right-radius: 30px;
         }
+
         transform: unset;
         padding: 30px;
         padding-right: 15px;
         max-width: 372px;
+
         &-suptitle {
           font-size: 16px;
           line-height: 20px;
         }
+
         &-title {
           font-size: 22px;
           line-height: 26px;
           width: auto;
           margin-bottom: 30px;
         }
+
         &-subtitle {
           font-size: 16px;
           line-height: 20px;
@@ -3473,45 +3537,64 @@
 
 
   .footer {
+    &__inner {
+      padding: 40px 0 30px;
+    }
     &__list {
-      margin: 0 auto;
+      width: 135px;
 
       &-outer {
-        gap: 100px;
+        gap: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 45px;
       }
 
-      &-title {
-        width: max-content;
-        margin: 0 auto;
-        text-align: center;
+      &-item {
+        margin-bottom: 12px;
       }
 
+      &-title,
       &-link {
-        width: max-content;
-        margin: 0 auto;
-        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    &__contacts {
+      &-item {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      &-img-outer {
+        width: 13px;
       }
     }
 
     &__logo-contacts-social {
-      flex-direction: column;
+      align-items: center;
     }
 
-    &__logo {
-      &-outer {
-        margin: 0 auto;
-      }
+    &__logo-outer {
+      width: 200px;
+      height: max-content;
     }
 
     &__social {
-      justify-content: center;
+      margin-top: 0;
     }
 
-    &__contacts {
-      align-items: center;
+    &__text {
+      font-size: 9px;
+      line-height: 15px;
+      margin-bottom: 50px;
+    }
 
-      &-outer {
-        flex-direction: column;
+    &__conf{
+      gap: 10px;
+      &-link {
+        font-size: 10px;
+        line-height: 110%;
       }
     }
   }
@@ -3557,16 +3640,13 @@
 
 
   .header {
+    &__logo-social {
+      gap: 20px;
+    }
     &__logo {
-      display: none;
-
-      &-mobile {
-        display: block;
-      }
-
       &-outer {
-        width: 40px;
-        height: 40px;
+        width: 120px;
+        height: 35px;
       }
     }
 
@@ -3575,12 +3655,9 @@
     }
 
     &__contacts {
-      &-outer {
-        flex-direction: column;
-      }
-
-      &:nth-child(1) {
-        align-items: flex-end;
+      &-item {
+        font-size: 10px;
+        line-height: 110%;
       }
     }
   }
@@ -3606,7 +3683,7 @@
       border-radius: 15px;
       width: 250px;
       height: 45px;
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 
@@ -3617,6 +3694,7 @@
 
       &:nth-child(2) {
         max-width: 280px;
+
         &:before {
           height: 644px;
           width: 287px;
@@ -3769,7 +3847,7 @@
           width: 104px;
           height: 54px;
         }
-
+        height: 25px;
         width: 25px;
       }
 
@@ -3817,11 +3895,13 @@
         margin: 30px auto 0;
         max-width: 270px;
       }
+
       &-arrow {
         width: 60px;
       }
     }
   }
+
   .spec-rev {
     &__slider {
       height: 230px;
@@ -3892,15 +3972,36 @@
       }
     }
 
+    &__text {
+      max-width: 200px;
+    }
+
+    &__img-outer {
+      right: -60px;
+      top: -48px;
+    }
+
     &__adv {
-      max-width: 120px;
+      &-outer {
+        gap: 60px 30px;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      max-width: 130px;
+      font-size: 14px;
+      line-height: 12px;
+
+      &:before {
+        width: 30px;
+        height: 30px;
+      }
 
       &:nth-child(2) {
-        transform: unset;
+        transform: translateX(-30px);
       }
 
       &:nth-child(3) {
-        transform: unset;
+        transform: translateX(30px);
       }
     }
   }
@@ -3919,15 +4020,18 @@
       }
     }
   }
+
   .our-works {
     &__slider {
       &-container {
         padding-bottom: 60px;
       }
+
       &-outer {
         width: 300px;
       }
     }
+
     &__infoOne {
       margin: 0 auto 310px;
     }
@@ -4162,14 +4266,36 @@
 
 
   .footer {
-    &__logo {
+
+    &__list {
+      width: max-content;
       &-outer {
-        width: 290px;
+        width: max-content;
+        gap: 50px;
+        margin: 0 auto;
       }
     }
 
-    &__contacts-item {
-      font-size: 22px;
+    &__contacts {
+      &-item {
+        font-size: 10px;
+        line-height: 10px;
+      }
+      &-img-outer {
+        width: 10px;
+      }
+    }
+
+    &__logo-outer {
+      width: 180px;
+    }
+
+    &__social {
+      gap: 10px;
+      &-img {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

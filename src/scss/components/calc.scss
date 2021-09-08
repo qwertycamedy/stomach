@@ -24,6 +24,43 @@
     }
   }
 
+
+
+
+
+  &__client-oral {
+    &-outer {
+      position: relative;
+    }
+
+    &-span {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: var(--green);
+      opacity: 0;
+      cursor: pointer;
+      transition: .3s linear;
+
+      &:hover {
+        opacity: .4;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
   &__client {
     &-tab {
       &-outer {
@@ -59,6 +96,7 @@
       &-content {
         position: relative;
         display: none;
+
         &.active {
           display: block;
           animation: show .7s;
@@ -72,6 +110,7 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
+
       &-outer {
         position: relative;
         z-index: 1;
@@ -81,6 +120,7 @@
         padding-bottom: 44px;
         padding-right: 0;
         padding-top: 11px;
+
         &:before {
           z-index: -1;
           background: #EBEBEB;
@@ -96,7 +136,7 @@
     }
 
     &-clean {
-      width: max-content; 
+      width: max-content;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -105,16 +145,18 @@
       font-size: 24px;
       line-height: 28px;
       text-align: center;
-      color: rgba(#666666,.5);
+      color: rgba(#666666, .5);
       border: unset;
       background: unset;
       padding: 0;
       transition: .3s linear;
       text-decoration: underline transparent;
+
       &:hover {
-        text-decoration: underline rgba(#666666,.5);
+        text-decoration: underline rgba(#666666, .5);
       }
     }
+
     &-label {
       font-weight: 400;
       font-size: 24px;
@@ -131,6 +173,7 @@
       appearance: none;
       -webkit-appearance: none;
       -moz-appearance: none;
+
       &-span {
         margin-left: -60px;
         width: 30px;
@@ -142,7 +185,7 @@
         transition: .3s linear;
       }
 
-      &:checked + .calc__symptom-checkbox-span {
+      &:checked+.calc__symptom-checkbox-span {
         background: #00dea2;
         pointer-events: none;
       }
@@ -205,5 +248,329 @@
     &:hover {
       transform: translateY(5px);
     }
+  }
+}
+
+
+#tooth {
+  &_1 {
+    left: 23px;
+    top: 170px;
+  }
+
+  &_2 {
+    left: 29px;
+    top: 152px;
+  }
+
+  &_3 {
+    left: 39px;
+    top: 134px;
+  }
+
+  &_4 {
+    left: 44px;
+    top: 118px;
+  }
+
+  &_5 {
+    left: 52px;
+    top: 88px;
+  }
+
+  &_6 {
+    left: 71px;
+    top: 74px;
+  }
+
+  &_7 {
+    left: 99px;
+    top: 61px;
+  }
+
+  &_8 {
+    left: 134px;
+    top: 58px;
+  }
+
+  &_9 {
+    left: 167px;
+    top: 58px;
+  }
+
+  &_10 {
+    left: 202px;
+    top: 64px;
+  }
+
+  &_11 {
+    left: 231px;
+    top: 74px;
+  }
+
+  &_12 {
+    left: 254px;
+    top: 88px;
+  }
+
+  &_13 {
+    left: 262px;
+    top: 113px;
+  }
+
+  &_14 {
+    right: 30px;
+    top: 132px;
+  }
+
+  &_15 {
+    right: 26px;
+    top: 146px;
+  }
+
+  &_16 {
+    right: 26px;
+    top: 170px;
+  }
+
+  &_17 {
+    left: 23px;
+    bottom: 174px;
+  }
+
+  &_18 {
+    left: 26px;
+    bottom: 149px;
+  }
+
+  &_19 {
+    left: 32px;
+    bottom: 123px;
+  }
+
+  &_20 {
+    left: 44px;
+    bottom: 95px; 
+  }
+
+  &_21 {
+    left: 63px;
+    bottom: 74px;
+  }
+
+  &_22 {
+    left: 84px;
+    bottom: 64px;
+  }
+
+  &_23 {
+    left: 109px;
+    bottom: 60px;
+  }
+
+  &_24 {
+    left: 136px;
+    bottom: 60px;
+  }
+
+  &_25 {
+    right: 137px;
+    bottom: 60px;
+  }
+
+  &_26 {
+    right: 109px;
+    bottom: 62px;
+  }
+
+  &_27 {
+    right: 85px;
+    bottom: 67px;
+  }
+
+  &_28 {
+    right: 64px;
+    bottom: 75px;
+  }
+
+  &_29 {
+    right: 46px;
+    bottom: 95px;
+  }
+
+  &_30 {
+    right: 33px;
+    bottom: 120px;
+  }
+
+  &_31 {
+    right: 27px;
+    bottom: 145px;
+  }
+
+  &_32 {
+    right: 24px;
+    bottom: 164px;
+  }
+}
+#c_tooth {
+  &_1 {
+    left: 23px;
+    top: 170px;
+  }
+
+  &_2 {
+    left: 29px;
+    top: 152px;
+  }
+
+  &_3 {
+    left: 39px;
+    top: 134px;
+  }
+
+  &_4 {
+    left: 44px;
+    top: 118px;
+  }
+
+  &_5 {
+    left: 52px;
+    top: 88px;
+  }
+
+  &_6 {
+    left: 71px;
+    top: 74px;
+  }
+
+  &_7 {
+    left: 99px;
+    top: 61px;
+  }
+
+  &_8 {
+    left: 134px;
+    top: 58px;
+  }
+
+  &_9 {
+    left: 167px;
+    top: 58px;
+  }
+
+  &_10 {
+    left: 202px;
+    top: 64px;
+  }
+
+  &_11 {
+    left: 231px;
+    top: 74px;
+  }
+
+  &_12 {
+    left: 254px;
+    top: 88px;
+  }
+
+  &_13 {
+    left: 262px;
+    top: 113px;
+  }
+
+  &_14 {
+    right: 30px;
+    top: 132px;
+  }
+
+  &_15 {
+    right: 26px;
+    top: 146px;
+  }
+
+  &_16 {
+    right: 26px;
+    top: 170px;
+  }
+
+  &_17 {
+    left: 23px;
+    bottom: 174px;
+  }
+
+  &_18 {
+    left: 26px;
+    bottom: 149px;
+  }
+
+  &_19 {
+    left: 32px;
+    bottom: 123px;
+  }
+
+  &_20 {
+    left: 44px;
+    bottom: 95px; 
+  }
+
+  &_21 {
+    left: 63px;
+    bottom: 74px;
+  }
+
+  &_22 {
+    left: 84px;
+    bottom: 64px;
+  }
+
+  &_23 {
+    left: 109px;
+    bottom: 60px;
+  }
+
+  &_24 {
+    left: 136px;
+    bottom: 60px;
+  }
+
+  &_25 {
+    right: 137px;
+    bottom: 60px;
+  }
+
+  &_26 {
+    right: 109px;
+    bottom: 62px;
+  }
+
+  &_27 {
+    right: 85px;
+    bottom: 67px;
+  }
+
+  &_28 {
+    right: 64px;
+    bottom: 75px;
+  }
+
+  &_29 {
+    right: 46px;
+    bottom: 95px;
+  }
+
+  &_30 {
+    right: 33px;
+    bottom: 120px;
+  }
+
+  &_31 {
+    right: 27px;
+    bottom: 145px;
+  }
+
+  &_32 {
+    right: 24px;
+    bottom: 164px;
   }
 }

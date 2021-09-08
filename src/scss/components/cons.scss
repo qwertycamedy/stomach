@@ -49,13 +49,14 @@
 
     &-img {
       width: 47px;
+      height: 47px;
     }
     &-img-outer {
       position: relative;
       width: 96px;
       height: 96px;
       display: flex;
-      align-self: center;
+      align-items: center;
       justify-content: center;
 
       &:before {

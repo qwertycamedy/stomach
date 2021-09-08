@@ -8,6 +8,13 @@
   }
 
   &__slider {
+    &-two,
+    &-three,
+    &-four,
+    &-five,
+    &-six {
+      display: none;
+    }
     &-outer {
       height: 660px;
       overflow-x: hidden;
