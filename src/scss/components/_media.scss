@@ -137,6 +137,7 @@
       }
 
       &__slider {
+
         &-two,
         &-three,
         &-four,
@@ -368,6 +369,31 @@
       height: 94px;
       font-size: 36px;
       line-height: 42px;
+    }
+  }
+
+  .calc {
+    &__client-symptom {
+      flex-direction: column;
+      gap: 90px;
+    }
+
+    &__symptom {
+      &-form {
+        &-outer {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__price-details {
+      flex-direction: column;
+      align-items: start;
+      gap: 80px;
+    }
+
+    &__details {
+      margin: 0 auto;
     }
   }
 
@@ -1787,6 +1813,100 @@
     }
   }
 
+  .calc {
+    &__client-symptom {
+      gap: 70px;
+    }
+
+    &__client,
+    &__symptom {
+      &-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__client {
+      &-tab {
+        &-btn {
+          padding: 10px 12px;
+          font-size: 15px;
+          line-height: 15px;
+          border-radius: 5px;
+
+          &-outer {
+            gap: 30px;
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+
+    &__symptom {
+      &-form {
+        max-width: 325px;
+        gap: 15px;
+        &-outer {
+          padding-left: 25px;
+          padding-bottom: 20px;
+          padding-top: 8px;
+          &:before {
+            border-bottom-left-radius: 30px;
+          }
+        }
+      }
+
+      &-clean {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      &-label {
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: 10px;
+      }
+
+      &-checkbox {
+        &-span {
+          margin-left: -20px;
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    &__price-details {
+      gap: 40px;
+    }
+
+    &__price {
+      gap: 15px;
+
+      &-title {
+        font-size: 28px;
+        line-height: 32px;
+
+        &-span {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &-num {
+        font-size: 40px;
+        line-height: 44px;
+      }
+    }
+
+    &__details {
+      width: 270px;
+      height: 50px;
+      border-radius: 20px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
 
   .trust {
     &__card {
@@ -2432,7 +2552,7 @@
       margin-bottom: 80px;
     }
 
-    &__img{
+    &__img {
       &-outer {
         width: 170px;
         right: -50px;
@@ -3540,6 +3660,7 @@
     &__inner {
       padding: 40px 0 30px;
     }
+
     &__list {
       width: 135px;
 
@@ -3566,6 +3687,7 @@
         font-size: 14px;
         line-height: 16px;
       }
+
       &-img-outer {
         width: 13px;
       }
@@ -3590,8 +3712,9 @@
       margin-bottom: 50px;
     }
 
-    &__conf{
+    &__conf {
       gap: 10px;
+
       &-link {
         font-size: 10px;
         line-height: 110%;
@@ -3643,6 +3766,7 @@
     &__logo-social {
       gap: 20px;
     }
+
     &__logo {
       &-outer {
         width: 120px;
@@ -3684,6 +3808,299 @@
       width: 250px;
       height: 45px;
       font-size: 14px;
+    }
+  }
+
+  .calc {
+    &__client {
+      &-tab {
+        &-btn {
+          font-size: 13px;
+          line-height: 13px;
+        }
+      }
+
+      &-oral {
+        &-outer {
+          width: 300px;
+        }
+
+        &-span {
+          width: 23px;
+          height: 23px;
+        }
+      }
+    }
+  }
+
+  #tooth {
+    &_1 {
+      left: 25px;
+      top: 154px;
+    }
+
+    &_2 {
+      left: 29px;
+      top: 135px;
+    }
+
+    &_3 {
+      left: 33px;
+      top: 120px;
+    }
+
+    &_4 {
+      left: 40px;
+      top: 103px;
+    }
+
+    &_5 {
+      left: 49px;
+      top: 84px;
+    }
+
+    &_6 {
+      left: 68px;
+      top: 70px;
+    }
+
+    &_7 {
+      left: 93px;
+    }
+
+    &_8 {
+      left: 123px;
+    }
+
+    &_9 {
+      left: 155px;
+    }
+
+    &_10 {
+      left: 185px;
+      top: 61px;
+    }
+
+    &_11 {
+      left: 212px;
+      top: 71px;
+    }
+
+    &_12 {
+      left: 232px;
+      top: 84px;
+    }
+
+    &_13 {
+      left: 240px;
+      top: 104px;
+    }
+    &_14 {
+      right: 31px;
+      top: 120px;
+    }
+    &_15 {
+      right: 26px;
+      top: 136px;
+    }
+    &_16 {
+      right: 25px;
+      top: 152px;
+    }
+    &_17 {
+      bottom: 162px;
+    }
+    &_18 {
+      bottom: 139px;
+    }
+    &_19 {
+      bottom: 114px;
+    }
+    &_20 {
+      bottom: 91px;
+    }
+    &_21 {
+      left: 61px;
+      bottom: 70px;
+    }
+    &_22 {
+      left: 80px;
+      bottom: 62px;
+    }
+    &_23 {
+      left: 101px;
+      bottom: 57px;
+    }
+    &_24 {
+      left: 125px;
+      bottom: 57px;
+    }
+    &_25 {
+      right: 125px;
+      bottom: 57px;
+    }
+    &_26 {
+      right: 100px;
+      bottom: 58px;
+    }
+    &_27 {
+      right: 78px;
+      bottom: 63px;
+    }
+    &_28 {
+      right: 60px;
+      bottom: 70px;
+    }
+    &_29 {
+      right: 45px;
+      bottom: 89px;
+    }
+    &_30 {
+      right: 32px;
+      bottom: 111px;
+    }
+    &_31 {
+      right: 25px;
+      bottom: 135px;
+    }
+    &_32 {
+      right: 23px;
+      bottom: 156px;
+    }
+  }
+  #c_tooth {
+    &_1 {
+      left: 25px;
+      top: 154px;
+    }
+
+    &_2 {
+      left: 29px;
+      top: 135px;
+    }
+
+    &_3 {
+      left: 33px;
+      top: 120px;
+    }
+
+    &_4 {
+      left: 40px;
+      top: 103px;
+    }
+
+    &_5 {
+      left: 49px;
+      top: 84px;
+    }
+
+    &_6 {
+      left: 68px;
+      top: 70px;
+    }
+
+    &_7 {
+      left: 93px;
+    }
+
+    &_8 {
+      left: 123px;
+    }
+
+    &_9 {
+      left: 155px;
+    }
+
+    &_10 {
+      left: 185px;
+      top: 61px;
+    }
+
+    &_11 {
+      left: 212px;
+      top: 71px;
+    }
+
+    &_12 {
+      left: 232px;
+      top: 84px;
+    }
+
+    &_13 {
+      left: 240px;
+      top: 104px;
+    }
+    &_14 {
+      right: 31px;
+      top: 120px;
+    }
+    &_15 {
+      right: 26px;
+      top: 136px;
+    }
+    &_16 {
+      right: 25px;
+      top: 152px;
+    }
+    &_17 {
+      bottom: 162px;
+    }
+    &_18 {
+      bottom: 139px;
+    }
+    &_19 {
+      bottom: 114px;
+    }
+    &_20 {
+      bottom: 91px;
+    }
+    &_21 {
+      left: 61px;
+      bottom: 70px;
+    }
+    &_22 {
+      left: 80px;
+      bottom: 62px;
+    }
+    &_23 {
+      left: 101px;
+      bottom: 57px;
+    }
+    &_24 {
+      left: 125px;
+      bottom: 57px;
+    }
+    &_25 {
+      right: 125px;
+      bottom: 57px;
+    }
+    &_26 {
+      right: 100px;
+      bottom: 58px;
+    }
+    &_27 {
+      right: 78px;
+      bottom: 63px;
+    }
+    &_28 {
+      right: 60px;
+      bottom: 70px;
+    }
+    &_29 {
+      right: 45px;
+      bottom: 89px;
+    }
+    &_30 {
+      right: 32px;
+      bottom: 111px;
+    }
+    &_31 {
+      right: 25px;
+      bottom: 135px;
+    }
+    &_32 {
+      right: 23px;
+      bottom: 156px;
     }
   }
 
@@ -3847,6 +4264,7 @@
           width: 104px;
           height: 54px;
         }
+
         height: 25px;
         width: 25px;
       }
@@ -3987,6 +4405,7 @@
         max-width: 300px;
         margin: 0 auto;
       }
+
       max-width: 130px;
       font-size: 14px;
       line-height: 12px;
@@ -4269,6 +4688,7 @@
 
     &__list {
       width: max-content;
+
       &-outer {
         width: max-content;
         gap: 50px;
@@ -4281,6 +4701,7 @@
         font-size: 10px;
         line-height: 10px;
       }
+
       &-img-outer {
         width: 10px;
       }
@@ -4292,6 +4713,7 @@
 
     &__social {
       gap: 10px;
+
       &-img {
         width: 20px;
         height: 20px;

@@ -2,7 +2,9 @@ if (document.querySelector('.calc')) {
   const cleanBtn = document.querySelector('.calc__symptom-clean'),
     checkBox = document.querySelectorAll('.calc__symptom-checkbox'),
     price = document.querySelector('.calc__price-num-span'),
-    teeth = document.querySelectorAll('.calc__client-oral-span');
+    teeth = document.querySelectorAll('.calc__client-oral-span'),
+    calcForm = document.querySelector('.calc__symptom-form');
+    let allCheckVal = 0;
 
 
 
@@ -14,6 +16,7 @@ if (document.querySelector('.calc')) {
       }
     });
 
+    allCheckVal = 0;
     price.textContent = 0;
 
     teeth.forEach((item) => {
@@ -25,21 +28,9 @@ if (document.querySelector('.calc')) {
 
 
 
-  checkBox.forEach(getCheckBoxAttr);
 
-  function getCheckBoxAttr(item) {
-    if (!item.checked) {
-      item.addEventListener('click', () => {
-        const currentCheck = item,
-          currentCheckPrice = currentCheck.getAttribute('value'),
-          sum = 0;
 
-        for(var i = 0; i < checkBox.length; i++) {
-          price.textContent = sum + +currentCheckPrice;
-        }
-      });
-    }
-  }
+
 
 
 
@@ -84,6 +75,8 @@ if (document.querySelector('.calc')) {
         teeth.forEach((item) => {
           item.classList.remove('active');
         });
+
+        allCheckVal = 0;
       });
     }
 
@@ -108,7 +101,25 @@ if (document.querySelector('.calc')) {
         });
       }
 
+      price.textContent = 0;
+      allCheckVal = 0;
+
       currentTooth.classList.add('active');
+
+
+      checkBox.forEach(getCheckBoxAttr);
+
+      function getCheckBoxAttr(item) {
+        item.addEventListener('click', () => {
+          if (item.checked) {
+            allCheckVal += +item.value;
+          } else {
+            allCheckVal -= +item.value;
+          }
+          price.textContent = allCheckVal;
+        });
+      }
+
 
       checkBox.forEach((item) => {
         if (item.checked) {
@@ -116,8 +127,16 @@ if (document.querySelector('.calc')) {
         }
       });
 
-      price.textContent = 0;
+
+
+
+
+
+
     });
+
+
+
   }
 
 

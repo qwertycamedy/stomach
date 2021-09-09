@@ -107,6 +107,9 @@
 
   &__symptom {
     &-form {
+      &.disable {
+        pointer-events: none;
+      }
       display: flex;
       flex-direction: column;
       gap: 30px;
