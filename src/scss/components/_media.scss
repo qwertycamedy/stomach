@@ -4355,19 +4355,28 @@
 
   .main-adv {
     &__card {
-      flex-direction: column;
-    }
-
-    &__info {
-      &-title {
-        margin-bottom: 15px;
-      }
+      gap: 5px;
     }
 
     &__img {
       &-outer {
-        margin-bottom: 10px;
+        width: 130px;
+        height: 130px;
       }
+    }
+
+    &__info {
+      max-width: 131px;
+      &-title {
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__text {
+      font-size: 10px;
+      line-height: 14px;
     }
   }
 
@@ -4516,10 +4525,6 @@
       }
 
       &-content {
-        &-top-img-outer {
-          display: none;
-        }
-
         &-top-info {
           margin-top: 0;
         }
